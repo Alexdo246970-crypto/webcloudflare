@@ -1,123 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario ejemplo</title>
+    <meta name="description" content="Página con imagen y video usando iframe">
+    <meta name="author" content="Tu Nombre">
+    <title>Ejercicio de Iframe y Video</title>
 </head>
 <body>
-    <h1>Formulario de Ejemplo</h1>
-    <form id="formEjemplo" method="post" action="procesarFormulario.php">
-        <h3>Input Type text</h3>
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" placeholder="Nombre" value="" size="40" maxlength="10" required>
 
-        <br>
-        <label>Apellidos
-            <input type="text" value="" id="apellidos" placeholder="Apellidos" size="40" maxlength="10">
-        </label>
+    <h1 id="inicio">Mi Página con Imagen y Video</h1>
 
-        <h3>Password</h3>
-        <!-- En este caso  es requerido y no se puede dejar en blanco-->
-        <label for="contraseña">Password:</label>
-        <input type="password" id="contraseña" name="psw" required>
+    <p>
+        En esta página encontrarás una imagen y un video de YouTube.  
+        Usa los siguientes enlaces para navegar:
+    </p>
 
-        <h3>Busqueda</h3>
-        <label for="busqueda">Search:</label>
-        <input type="search" id="busqueda" name="googlesearch">
+    <a href="#imagen">Ver Imagen</a> |
+    <a href="#video">Ver Video</a> |
+    <a href="#inicio">Volver al Inicio</a>
 
-        <h3>Email</h3>
-        <!-- En este caso  el email no se puede autocompletar-->
-        <label for="correo">email:</label>
-        <input type="email" id="correo" name="email" autocomplete="off">
+    <hr>
 
-        <h3>Url</h3>
-        <label for="url">url:</label>
-        <input type="url" id="url" name="homepage">
+    <h2 id="imagen">Imagen de Ejemplo</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/JPEG_example_flower.jpg/600px-JPEG_example_flower.jpg" 
+         alt="Flor de ejemplo" 
+         width="400" 
+         height="300">
+    <br>
+    <a href="#inicio">Volver al Inicio</a>
 
-        <h3>Numero</h3>
-        <label for="numero">numero:</label>
-        <input type="number" id="numero" name="quantity" min="1" max="25" step="3">
+    <hr>
 
-        <h3>Rango</h3>
-        <label for="rango">rango:</label>
-        <input type="range" id="rango" name="points" min="0" max="10">
+    <!-- Video -->
+    <h2 id="video">Video de YouTube</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/bpBE_iFjylE?si=Ixb2TzfOEd-DEGbW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
 
-        <h3>Color</h3>
-        <label for="color">Color:</label>
-        <input type="color" id="color" name="favcolor">
-
-        <h3>Fecha</h3>
-        <label for="fecha">Fecha:</label>
-        <input type="date" id="fecha" name="bday" min="2000-01-02">
-
-        <h3>Hora</h3>
-        <label for="hora">Hora:</label>
-        <input type="time" id="hora" name="usr_time">
-
-        <h3>Fechahora</h3>
-        <label for="fechahora">datetime:</label>
-        <input type="datetime-local" id="fechahora" name="bdaytime">
-
-        <h3>Semana</h3>
-        <label for="week">semana año:</label>
-        <input type="week" name="week_year">
-
-        <h3>Fichero</h3>
-        <label for="fichero">Ficheros</label>
-        <input type="file" name="img" multiple>
-
-        <h3>Checkbox</h3>
-        <input type="checkbox" name="cbpelicula" checked="checked" />Peliculas
-        <br>
-        <input type="checkbox" name="cblibros" />Libros
-        <br>
-        <input type="checkbox" name="cbinternet" />Internet
-
-        <h3>RadioButton</h3>
-        <input type="radio" name="genero" value="masculino" checked> Masculino
-        <br>
-        <input type="radio" name="genero" value="femenino"> Femenino
-        <br>
-        <input type="radio" name="genero" value="otro"> Otro
-    </form>
-
-    <select name="listamultiple" multiple="multiple">
-            <optgroup label="Entradas textuales">
-                <option>Entrada de línea</option>
-                <option>Entrada de contraseña</option>
-                <option>Entrada multi-línea</option>
-            </optgroup>
-            <optgroup label="Opciones">
-                <option selected="selected">Casillas de verificación</option>
-                <option>Botones radio</option>
-                <option>Listas</option>
-            </optgroup>
-        </select>
-
-    <h3>datalist</h3>
-        <label for="buscador">Buscador:</label>
-        <input list="browsers" id="buscador" name="buscador">
-        <datalist id="browsers">
-            <option value="Internet Explorer">
-            <option value="Firefox">
-            <option value="Chrome">
-            <option value="Opera">
-            <option value="Safari">
-        </datalist>
-
-    <fieldset>
-        <legend>Información laboral</legend>
-        <p>Compañía: <input type="text" name="compania"></p>
-        <p>Dirección: <input type="text" name="direcciontrabajo"></p>
-        <p>Teléfono: <input type="tel" name="telefonotrabajo"></p>
-    </fieldset>
-
-    <h3>Textarea</h3>
-    <textarea name="mensaje" rows="10" cols="30">
-    Introduce aquí el mensaje.
-    </textarea>
-
+    </iframe>
+    <br>
+    <a href="#inicio">Volver al Inicio</a>
 
     <h3>Cambio</h3>
 
